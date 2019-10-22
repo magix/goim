@@ -52,3 +52,6 @@
     writeTimeout = "500ms"
     idleTimeout = "120s"
     expire = "30m"
+
+[mongdb]
+    hostDomain = "127.0.0.1:6379"
