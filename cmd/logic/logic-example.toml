@@ -54,4 +54,5 @@
     expire = "30m"
 
 [mongdb]
-    hostDomain = "127.0.0.1:6379"
+    HostDomain = "127.0.0.1:6379"
+    MongodbConnectTimeout = "200ms"

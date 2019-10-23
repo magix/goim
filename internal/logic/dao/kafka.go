@@ -19,6 +19,13 @@ func (d *Dao) PushMsg(c context.Context, op int32, server string, keys []string,
 		Keys:      keys,
 		Msg:       msg,
 	}
+
+	//
+	// instance message storage HOOKS:
+	// add your message storage logic here
+	// if you want to save offline message only, check current user online or not first
+	//
+
 	b, err := proto.Marshal(pushMsg)
 	if err != nil {
 		return

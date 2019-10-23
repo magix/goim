@@ -28,6 +28,20 @@ func (l *Logic) Connect(c context.Context, server, cookie string, token []byte) 
 	roomID = params.RoomID
 	accepts = params.Accepts
 	hb = int64(l.c.Node.Heartbeat) * int64(l.c.Node.HeartbeatMax)
+
+	//
+	//  User Management HOOKS
+	//  add your user management logic here , somethings like:
+	//  1. access user management unit to verify mid ( member / user ID )
+	//  2. check permission to access room or not
+	//
+
+	// Session Management HOOKS
+	// key just like the session ID, add your session management logic here, like:
+	// 1. check session ID is valid or not
+	// 2. if not, generate new session ID
+	//  example like below:
+
 	if key = params.Key; key == "" {
 		key = uuid.New().String()
 	}

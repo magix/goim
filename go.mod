@@ -3,6 +3,7 @@ module github.com/Terry-Mao/goim
 require (
 	github.com/BurntSushi/toml v0.3.1
 	github.com/Shopify/sarama v1.19.0 // indirect
+	github.com/Shopify/toxiproxy v2.1.4+incompatible // indirect
 	github.com/bilibili/discovery v1.0.1
 	github.com/bsm/sarama-cluster v2.1.15+incompatible
 	github.com/davecgh/go-spew v1.1.1 // indirect
@@ -10,6 +11,7 @@ require (
 	github.com/eapache/go-xerial-snappy v0.0.0-20180814174437-776d5712da21 // indirect
 	github.com/eapache/queue v1.1.0 // indirect
 	github.com/gin-gonic/gin v1.3.0
+	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/gogo/protobuf v1.1.1
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/golang/protobuf v1.2.0
@@ -25,10 +27,15 @@ require (
 	github.com/stretchr/testify v1.3.0
 	github.com/thinkboy/log4go v0.0.0-20160303045050-f91a411e4a18
 	github.com/ugorji/go/codec v0.0.0-20190204201341-e444a5086c43
+	github.com/xdg/scram v0.0.0-20180814205039-7eeb5667e42c // indirect
+	github.com/xdg/stringprep v1.0.0 // indirect
 	github.com/zhenjl/cityhash v0.0.0-20131128155616-cdd6a94144ab
-	golang.org/x/net v0.0.0-20181011144130-49bb7cea24b1
+	go.mongodb.org/mongo-driver v1.1.2
+	golang.org/x/crypto v0.0.0-20191011191535-87dc89f01550 // indirect
+	golang.org/x/net v0.0.0-20190404232315-eb5bcb51f2a3
 	google.golang.org/grpc v1.16.0
 	gopkg.in/Shopify/sarama.v1 v1.19.0
+	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22
 	gopkg.in/yaml.v2 v2.2.2 // indirect
 )
 
@@ -45,3 +52,5 @@ replace (
 	google.golang.org/genproto => github.com/google/go-genproto v0.0.0-20180817151627-c66870c02cf8
 	google.golang.org/grpc => github.com/grpc/grpc-go v1.16.0
 )
+
+go 1.13
